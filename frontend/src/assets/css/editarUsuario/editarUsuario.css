@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.divPerfil {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.containerInputsPerfil {
+    width: 50%;
+}
+
+.inputFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputFlex>label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.inputFlex input {
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.divImagePerfil {
+    width: 50%;
+}
+
+.containerImagePerfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerImagePerfil p {
+    margin-top: 20px;
+}
+
+.botonGuardar {
+    margin: 0 auto;
+}
+
+.botonGuardar input {
+    padding: 15px 40px;
+    background-color: #FFF;
+    border: solid 2px black;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.botonGuardar input:hover {
+    background-color: #5dc1b9;
+}
+
+.actImagen {
+    border: 7px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #d5ffff;
+}
+
+.actImagen img {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/**File Inputs**/
+.container-input {
+    text-align: center;
+    background: #005954;
+    border-top: 5px solid #5dc1b9;
+    padding: 15px;
+    border-radius: 6px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile+label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+}
+
+.inputfile+label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+
+.iborrainputfile {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Lato';
+}
+
+/* style 1 */
+
+.inputfile-1+label {
+    color: #fff;
+    background-color: #5dc1b9;
+    transition: all .5s;
+}
+
+.inputfile-1:focus+label,
+.inputfile-1.has-focus+label,
+.inputfile-1+label:hover {
+    background-color: #338b85;
+}
+
+
+

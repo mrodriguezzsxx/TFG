@@ -1,0 +1,154 @@
+.containerGeneral {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.containerIzq {
+    width: 45%;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerIzq>label {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.containerIzq input {
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.containerIzq textarea {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    max-height: 100px;
+    min-height: 60px;
+    border-radius: 10px;
+}
+
+.containerDer {
+    width: 45%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerDer>label {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.containerDer textarea {
+    max-width: 100%;
+    width: 100%;
+}
+
+
+.containerDer>label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.containerImg {
+    border: 1px solid black;
+    border-radius: 80px;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categorias {
+    padding: 5px;
+}
+
+img {
+    width: 100%
+}
+
+.guardar {
+    margin: 30px auto;
+}
+
+.guardar input {
+    padding: 15px 40px;
+    background-color: #FFF;
+    border: solid 2px black;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.guardar input:hover {
+    background-color: #5dc1b9;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile+label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+}
+
+.inputfile+label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+
+.iborrainputfile {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Lato';
+}
+
+/* style 1 */
+
+.inputfile-1+label {
+    color: #fff;
+    background-color: #5dc1b9;
+    transition: all .5s;
+}
+
+.inputfile-1:focus+label,
+.inputfile-1.has-focus+label,
+.inputfile-1+label:hover {
+    background-color: #338b85;
+}

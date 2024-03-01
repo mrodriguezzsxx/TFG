@@ -1,0 +1,108 @@
+
+.usuariosRol .rol {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+.usuariosRol .rol p {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    cursor: pointer;
+    transition: all 1s;
+    position: relative;
+}
+.usuariosRol .rol p:hover {
+    transform: scale(1.20);
+}
+
+.usuariosRol .rol p:nth-child(1)::before {
+    content: 'ESTUDIANTE';
+    position: absolute;
+    top: 0px;
+}
+.usuariosRol .rol p:nth-child(2)::before {
+    content: 'INSTRUCTOR';
+    position: absolute;
+    top: 0;
+}
+.usuariosRol .rol p:hover::before {
+    width: 100%;
+    animation: animacion 1.5s steps(35), transparent .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    color: blue;
+    border-right: 2px solid blue;
+}
+
+@keyframes animacion {
+    from {
+        width: 0px;
+    }
+}
+@keyframes transparent {
+    50% {
+        border-color: transparent;
+    }
+}
+.table {
+    border-collapse: collapse;
+    width: 80%;
+    overflow-x: auto;
+    margin: 40px auto;
+}
+.table th:nth-child(1) {
+    width: 20%;
+}
+.table th,
+.table td {
+    vertical-align: middle;
+    border-bottom: 1px solid #000;
+    border-collapse: collapse;
+    padding: 15px 30px;
+    transition: all .5s;
+}
+.table tbody tr:hover {
+    background-color: #979696;
+    color: #fff;
+}
+
+.table td img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all .5s;
+}
+.table td img:hover {
+    transform: scale(1.25);
+}
+.table tbody tr .acciones button {
+    border: none;
+    padding: 10px;
+    margin: 0 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.table tbody tr .acciones button:first-child {
+    background-color: rgb(75, 74, 74);
+    transition: all .5s;
+}
+.table tbody tr .acciones button:first-child:hover {
+    background-color: #131313;
+}
+.table tbody tr .acciones button:nth-child(2) {
+    background-color: #00840D;
+    transition: all .5s;
+}
+.table tbody tr .acciones button:nth-child(2):hover {
+    background-color: #06470d;
+}
+.table tbody tr .acciones button:last-child {
+    background-color: #C00000;
+    transition: all .5s;
+}
+.table tbody tr .acciones button:last-child:hover {
+    background-color: #790606;
+}

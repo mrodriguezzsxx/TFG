@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.error {
+    display: grid;
+    place-items: center;
+    height: 102.2vh;
+    background: linear-gradient(#C7D3DC,#5B798E);
+    transition: background 1s ease-out;
+
+}
+.error-404 {
+    font-size: 20px;
+    text-align: center;
+}
+.error-404 a {
+    text-decoration: none;
+    color: #1a0988; 
+    transition: all .5s;
+}
+
+.error-404 h1 {
+    font-size: 70px;
+}
+.error img {
+    width: 300px;
+    height: 300px;
+    margin-top: -170px;
+    transition: all .5s;
+    cursor: pointer;
+    animation: animated 1s forwards;
+}
+
+@keyframes animated {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

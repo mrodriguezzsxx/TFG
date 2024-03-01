@@ -1,0 +1,34 @@
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating span {
+  cursor: default;
+  color: #efefef;
+  text-decoration: none;
+  -webkit-transition: color 0.4s;
+  -moz-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
+  font-size: 30px; /* Ajusta el tamaño de las estrellas según tus preferencias */
+}
+
+.rating span.active,
+.rating span.active ~ span {
+  color: orange;
+}
+
+.rating span.half {
+  position: relative;
+  display: inline-block;
+}
+
+.rating span.half:before {
+  content: "★";
+  position: absolute;
+  width: 50%;
+  overflow: hidden;
+  color: orange;
+}
+

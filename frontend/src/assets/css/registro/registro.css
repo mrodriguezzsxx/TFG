@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.containerSignUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #005954;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%232b7a76' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23559b98' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%2380bdbb' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23aadedd' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23D5FFFF' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.signup {
+    background-color: #9EE0DB;
+    border: 3px solid #005954;
+    border-radius: 30px;
+    width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+div.signup h1 {
+    margin: 15px 100px;
+    border-bottom: 10px solid #D5FFFF;
+}
+
+div.roles label {
+    font-size: 20px;
+    padding: 10px;
+}
+
+div.camposRegistro input{
+    width: 85%;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid black;
+    outline: none;
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.terminos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terminos input {
+    width: 20px;
+    height: 18px;
+}
+
+.terminos label {
+    font-size: 18px;
+}
+
+.crearCuenta input {
+    padding: 15px 40px;
+    background-color: #FFF;
+    border: solid 2px black;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.modal {
+    background-color: rgba(0,0,0, .5);
+}
+
+.popUp {
+    background-color: #9EE0DB;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+.cerrarPopup {
+    cursor: pointer;
+}
+
+.popUp h4 {
+    margin: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.exit {
+    text-align: right;
+    margin: 10px 15px;
+}
+
+/**File Inputs**/
+.container-input {
+    text-align: center;
+    background: #005954;
+    border-top: 5px solid #5dc1b9;
+    padding: 15px;
+    border-radius: 6px;
+    width: 0%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+
+.iborrainputfile {
+    font-size:16px; 
+    font-weight:normal;
+    font-family: 'Lato';
+}
+
+/* style 1 */
+
+.inputfile-1 + label {
+    color: #fff;
+    background-color: #5dc1b9;
+    transition: all .5s;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+    background-color: #338b85;
+}
+
+textarea {
+    width: 80%;
+    max-width: 80%;
+    min-width: 80%;
+    max-height: 60px;
+    min-height: 15px;
+    padding: 15px;
+    margin: 5px;
+    background-color: #FFF;
+    border: 1px solid black;
+}
+
+.enviar input {
+    padding: 10px 40px;
+    background-color: #FFF;
+    border: solid 2px black;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}

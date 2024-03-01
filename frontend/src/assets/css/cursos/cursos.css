@@ -1,0 +1,57 @@
+.mainCursos1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.mainCursos1 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.mainCursos1 .buscador {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 0 150px;
+    margin-top: 20px;
+}
+.mainCursos1 .buscador select {
+    background-color: #338B85;
+    color: #fff;
+    padding: 8px 10px;
+}
+.mainCursos1 .buscador input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 10px;
+    width: 200px;
+}
+.mainCursos1 .no-cursos {
+    text-align: center;
+    font-size: 24px;
+    color: #888;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mainCursos1 .no-cursos::before {
+    content: "\f05e";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 48px;
+  display: block;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+.mainCursos1 .no-cursos::after {
+    content: "😞";
+  display: block;
+  font-size: 40px;
+  margin-top: 20px;
+}
